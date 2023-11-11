@@ -1,0 +1,18 @@
+/* ----------------------------- */
+/*           GENARAL              */
+/* -------------------------------- */
+
+:root{
+/*  */
+}
+body{
+    /*  */
+}
+header{
+/*  */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
