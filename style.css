@@ -13,9 +13,23 @@
 
 body{
     font-family: 'Nunito Sans', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+/* Light mode specific styles */
+body.light__mode {
     background-color: var(--light-mode-bg);
+    color: var(--dark-blue-color);
 }
 
+/* Dark mode specific styles */
+body.dark__mode {
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-text-light-mode-elemen);
+}
+
+#toogle__btn{
+    cursor: pointer;
+}
 
 nav{
     display: flex;

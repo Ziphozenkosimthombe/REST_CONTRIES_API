@@ -1,3 +1,27 @@
+//function to toggle between light and dark
+function toggelMode(){
+    const body = document.body  // Get a reference to the document body
+    body.classList.toggle('dark__mode') // Toggle the 'dark__mode' class on the body element
+    body.classList.toggle('light__mode')  // Toggle the 'light__mode' class on the body element
+
+    // Save the user's preference in local storage
+    const isDarkMode = body.classList.contains('dark__mode')
+    localStorage.setItem('dark__mode', isDarkMode)
+}
+
+// Check user's preference on page load
+document.addEventListener('DOMContentLoaded', ()=>{
+    const saveMode = localStorage.getItem(('dark__mode')) // Retrieve the user's preference from local storage
+    // Check if the saved mode is 'true', and add the 'dark__mode' class to the body
+    if (saveMode === 'true'){
+        document.body.classList.add('dark__mode')
+    }else{
+        // If the saved mode is not 'true', remove the 'dark__mode' class from the body
+        document.body.classList.remove('dark__mode')
+    }
+} )
+
+
 //url for the all the countries api
 const url = 'https://restcountries.com/v3.1/all'
 //we are using the fetch to fetch the url api
