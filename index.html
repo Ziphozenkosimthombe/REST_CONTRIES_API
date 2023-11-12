@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <p>Where in the world?</p>
-            <p><span>Dark Mode</span></p>
-        </nav>
-    </header>
-    <ul></ul>
+    <div id="home__page">
+        <header id="hearder">
+            <nav>
+                <p>Where in the World?</p>
+                <p><img src="asserts/moon-outline.svg" alt="moon-outline" width="20px">Dark Mode</p>
+            </nav>
+        </header>
+        <div id="input__search">
+            <input type="text"
+            name="countries"
+            placeholder="Search for the country..."
+            required
+            class="search">
+            <span class="search__icon"><img src="asserts/search-outline.svg" alt="search-outline" width="20px"></span>
+        </div>
+        <ul>
+        </ul>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
